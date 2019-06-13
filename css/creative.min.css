@@ -2221,7 +2221,7 @@ pre code {
 @media (max-width:767.98px) {
     .image-gallery .hover-content a {
         width: 100%;
-        font-size: 13px !important;
+        font-size: 25px !important;
     }
     .image-gallery .img-gallery-component {
         position: relative;
@@ -2229,7 +2229,6 @@ pre code {
         margin: 0 auto;
     }
     .image-gallery .img-gallery-component figure {
-        margin-bottom: 20px !important;
     }
     .image-gallery .hover-content{
         display: flex !important;
@@ -2259,6 +2258,10 @@ pre code {
 
     .table-responsive-lg>.table-bordered {
         border: 0
+    }
+    .image-gallery .hover-content{
+        opacity: 1 !important;
+        bottom: 0 !important;
     }
 }
 
@@ -11855,13 +11858,13 @@ header.masthead h1 {
   
   .image-gallery .img-gallery-component {
     position: relative;
-  
+    overflow: hidden;
   }
   
   .image-gallery .hover-content {
     position: absolute;
     background: rgb(244, 98, 58,0.9);
-    top: 0;
+    bottom: -100%;
     height: 100%;
     z-index: 999;
     text-align: center;
@@ -11870,12 +11873,13 @@ header.masthead h1 {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    display: none;
+    opacity: 0;
     transition: all ease 0.3s;
   }
   
   .image-gallery .img-gallery-component:hover .hover-content {
-    display: flex;
+    opacity: 1;
+    bottom: 0;
   
   
   }
@@ -11887,3 +11891,38 @@ header.masthead h1 {
     font-size: 15px;
   }
   
+  .about p{
+      color: #000 !important;
+  }
+
+  .hero-bkg-animated {
+    background: gray url(https://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding-top: 120px;
+    box-sizing: border-box;
+    -webkit-animation: slide 20s linear infinite;
+    background-attachment: fixed;
+  }
+  
+  
+  @-webkit-keyframes slide {
+      from { background-position: 0 0; }
+      to { background-position: -400px 0; }
+  }
+
+  #services .col-lg-3, #services .col-lg-3 h3, #services .col-lg-3 i{
+      transition: all ease-out 0.3s;
+  }
+  
+  #services .col-lg-3:hover h3, #services .col-lg-3:hover i{
+    color: #f4623a;
+  }
+  #portfolio1 .img-gallery-component{
+    margin-top: 20px;
+  }
+  #portfolio1 img{
+    object-fit: cover;
+    min-height: 200px;
+  }
