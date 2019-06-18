@@ -2260,7 +2260,6 @@ pre code {
         border: 0
     }
     .image-gallery .hover-content{
-        opacity: 1 !important;
         bottom: 0 !important;
     }
 }
@@ -11852,7 +11851,6 @@ header.masthead h1 {
   }
   
   .image-gallery .img-gallery-component figure {
-    border: 2px solid #000;
     position: relative;
   }
   
@@ -11919,10 +11917,22 @@ header.masthead h1 {
   #services .col-lg-3:hover h3, #services .col-lg-3:hover i{
     color: #f4623a;
   }
+  /* #portfolio1{
+    background: url(../img/portfolio/thumbnails/responsivebg.png) no-repeat center/cover;
+  } */
   #portfolio1 .img-gallery-component{
-    margin-top: 20px;
   }
   #portfolio1 img{
     object-fit: cover;
-    min-height: 200px;
+    min-height: 540px;
   }
+.wrap-portfolio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.wrap-portfolio div.WOW{
+    flex-grow: 1;
+    flex-basis: 50%;
+    max-width: 50%;
+}
