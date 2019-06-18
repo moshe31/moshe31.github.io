@@ -11934,8 +11934,9 @@ header.masthead h1 {
 .wrap-portfolio div.WOW{
     flex-grow: 1;
     flex-basis: 50%;
+    border: 1px solid rgba(0,0,0,0.1);
     max-width: 50%;
 }
 .wrap-portfolio div.WOW{
-    
+
 }
