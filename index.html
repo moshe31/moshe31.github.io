@@ -17,16 +17,17 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body> 
     <header class="header">
         <a href="" class="logo"><img class="img-responsive" src="images/M-logo.png" alt="Khawaja Mustafa"></a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
-            <li><a href="#">My Work</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#testimonial">Testimonial</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
     <div class="wrapper">
@@ -44,7 +45,7 @@
                         <p>
                             I design and code beautifully simple things, and I love what I do.
                         </p>
-                        <a href="#">
+                        <a href="#work">
                             Got to Work
                         </a>
                     </div>
@@ -55,7 +56,7 @@
         <!-- banner end -->
 
         <!-- section 1 start -->
-        <section class="section1-outer article__header bubbles in-view" style="visibility: visible; ">
+        <section class="section1-outer article__header bubbles in-view" style="visibility: visible;" id="about">
 
             <div class="bubbles__bubble b">
                 <div class="bubbles__bubble"></div>
@@ -83,7 +84,7 @@
         <!-- section 1 end -->
 
         <!-- section2 start -->
-        <section class="section2-outer">
+        <section class="section2-outer" id="careers">
             <div class="container">
                 <div class="row section3-wrapper">
                     <div class="col-lg-12">
@@ -102,7 +103,7 @@
                             <div class="col-lg-4">
                                 <div class="news-item aos-init aos-animate" data-aos="fade-right">
                                     <figure>
-                                        <img src="images/designer.jpg" alt="">
+                                        <img src="images/concentration.jfif" alt="">
                                     </figure>
                                     <div class="news-description">
                                         <h3>Designer</h3>
@@ -118,7 +119,7 @@
                             <div class="col-lg-4">
                                 <div class="news-item aos-init aos-animate" data-aos="fade-up">
                                     <figure>
-                                        <img src="images/htmlconv.jpg" alt="">
+                                        <img src="images/accessories.jfif" alt="">
                                     </figure>
                                     <div class="news-description">
                                         <h3>HTML Conversion</h3>
@@ -135,7 +136,7 @@
                             <div class="col-lg-4">
                                 <div class="news-item aos-init aos-animate" data-aos="fade-left">
                                     <figure>
-                                        <img src="images/cms.jpg" alt="">
+                                        <img src="images/coding.jfif" alt="">
                                     </figure>
                                     <div class="news-description">
                                         <h3>Custom WordPress Theme Development</h3>
@@ -172,7 +173,7 @@
         <!-- section2 end -->
 
         <!-- section 3 start -->
-        <section class="section5-outer">
+        <section class="section5-outer" id="work">
             <div id="burst-12">
 
             </div>
@@ -261,7 +262,7 @@
         </section>
         <!-- section 3 end -->
         <!-- section 4 start -->
-        <section class="testimonials">
+        <section class="testimonials" id="testimonial">
             <div class="mickymouse">
                 <img src="images/welcome.svg" alt="">
             </div>
@@ -274,61 +275,66 @@
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
                 </ol>
                 <!-- Wrapper for carousel items -->
                 <div class="carousel-inner">
                     <div class="item carousel-item active">
-                        <div class="img-box"><img src="/examples/images/clients/3.jpg" alt=""></div>
-                        <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia.
-                            Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus
-                            risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget
-                            rutrum.</p>
-                        <p class="overview"><b>Michael Holz</b>Seo Analyst at <a href="#">OsCorp Tech.</a></p>
+                        <p class="testimonial">I used this coder for some PSD to HTML5 work. He did a good job. He
+                            handled adjustments easily and quickly. I will use him in the future for similar type work.
+                            It was a pleasure working with him.</p>
+                        <p class="overview"><b>Eric Barnes</b></p>
                         <div class="star-rating">
                             <ul class="list-inline">
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
                             </ul>
                         </div>
                     </div>
                     <div class="item carousel-item">
-                        <div class="img-box"><img src="/examples/images/clients/1.jpg" alt=""></div>
-                        <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem
-                            tempor,
-                            varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada
-                            ante.
-                            Vestibulum idac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non
-                            aliquet.
+                        <p class="testimonial">Khawaja was great to work with. Once we had clarified the brief he was
+                            able to deliver the correct design product quickly.
                         </p>
-                        <p class="overview"><b>Paula Wilson</b>Media Analyst at <a href="#">SkyNet Inc.</a></p>
+                        <p class="overview"><b>Matt butterworth</b></p>
                         <div class="star-rating">
                             <ul class="list-inline">
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
                             </ul>
                         </div>
                     </div>
                     <div class="item carousel-item">
-                        <div class="img-box"><img src="/examples/images/clients/2.jpg" alt=""></div>
-                        <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi
-                            a mi
-                            suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis.
-                            Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor
-                            velit.</p>
-                        <p class="overview"><b>Antonio Moreno</b>Web Developer at <a href="#">Circle Ltd.</a></p>
+                        <p class="testimonial">Mo did a great job with my portfolio site. He did all the things asked of
+                            him, worked very patiently through all my changes and delivered everything I asked him for.
+                            I would definitely recommend him!</p>
+                        <p class="overview"><b>Ranvijay</b></p>
                         <div class="star-rating">
                             <ul class="list-inline">
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item carousel-item">
+                        <p class="testimonial">Khawaja was good to work with. He was able to design and develop our site
+                            templates within the timeframe.</p>
+                        <p class="overview"><b>Matt butterworth</b></p>
+                        <div class="star-rating">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
                             </ul>
                         </div>
                     </div>
@@ -344,7 +350,7 @@
         </section>
         <!-- section 4 end -->
         <!-- section 5 start -->
-        <section class="section5-outer">
+        <section class="section5-outer" id="contact">
             <div class="inner">
                 <div class="row section5-wrapper">
                     <div class="col-xs-12 col-sm-12 col-lg-6">
@@ -356,7 +362,7 @@
                                 I love to <span class="libre-font">Entertain you with my skills</span>
                             </h2>
                             <div class="subscription-form">
-                                <form action="">
+                                <form>
                                     <input type="text" placeholder="Your email">
                                     <input type="submit" value="Hire me">
                                 </form>
@@ -375,6 +381,10 @@
                                 <ul>
                                     <li><a href="https://www.facebook.com/Mustafa2595"><i
                                                 class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.upwork.com/freelancers/~01e00c315e1907079d"><img
+                                                src="images/upwork.webp" alt="Upwork"></a></li>
+                                    <li><a href="https://www.fiverr.com/moshedev31?up_rollout=true"><img
+                                                src="images/fiver.png" alt="Fiver"></a></li>
                                 </ul>
                             </div>
                         </div>
